@@ -1,0 +1,34 @@
+html, body, #container {
+    height: 100%;
+}
+
+body > #container {
+    height: auto;
+    min-height: 100%;
+}
+
+.header-style {
+    background: #003333;
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.75);
+    color: #669999;
+    font-family: 'Fascinate Inline', cursive;
+    height: 75px;
+}
+
+.footer-style {
+    background: #003333;
+    color: #669999;
+    clear: both;
+    font-family: 'Fascinate Inline', cursive;
+    height: 50px;
+    margin-top: -50px;
+    position: relative;
+    z-index: 10;
+}
+
+img {
+    margin:auto;
+    max-width:40px;
+    max-height:40px;
+    text-align: center;
+}
