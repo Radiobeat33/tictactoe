@@ -7,6 +7,11 @@ body > #container {
     min-height: 100%;
 }
 
+.tictac {
+    height:40px;
+    width: 40px
+}
+
 .header-style {
     background: #003333;
     box-shadow: 0 5px 10px 1px rgba(0,0,0,0.75);
@@ -31,4 +36,54 @@ img {
     max-width:40px;
     max-height:40px;
     text-align: center;
+}
+
+.XO-section, .board {
+    padding: 30px 0;
+}
+
+.sqr1style, .sqr2style, .sqr3style, .sqr4style, .sqr5style, .sqr6style, .sqr7style, .sqr8style, .sqr9style {
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 60px;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+
+}
+
+
+.sqr1style {
+
+}
+
+.sqr2style {
+
+}
+
+.sqr3style {
+
+}
+
+.sqr4style {
+
+}
+
+.sqr5style {
+
+}
+
+.sqr6style {
+
+}
+
+.sqr7style {
+
+}
+
+.sqr8style {
+
+}
+
+.sqr9style {
+
 }
