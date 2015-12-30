@@ -109,13 +109,9 @@ app.controller('indexCtrl', function($scope, $timeout){
         if(choice === 'X'){
             player = 'X';
             cpu = 'O';
-            $scope.playerPic = 'assets/X.png';
-            $scope.cpuPic = 'assets/O.png';
         } else {
             player = 'O';
             cpu = 'X';
-            $scope.playerPic = 'assets/O.png';
-            $scope.cpuPic = 'assets/X.png';
         }
         $scope.midGame = true;
     };

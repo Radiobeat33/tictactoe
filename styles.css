@@ -7,11 +7,6 @@ body > #container {
     min-height: 100%;
 }
 
-.tictac {
-    height:40px;
-    width: 40px
-}
-
 .header-style {
     background: #003333;
     box-shadow: 0 5px 10px 1px rgba(0,0,0,0.75);
