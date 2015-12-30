@@ -104,6 +104,8 @@ app.controller('indexCtrl', function($scope, $timeout){
 
     $scope.midGame = false;
 
+    // This function starts the game based on the user's choice of being X or O
+    
     $scope.startGame = function(choice){
         quickReset();
         if(choice === 'X'){
@@ -116,24 +118,26 @@ app.controller('indexCtrl', function($scope, $timeout){
         $scope.midGame = true;
     };
 
+    // The following 'sqrClick' functions are ran when the player clicks one of the nine squares
+    
     $scope.sqr1Click = function(){
         if ($scope.sqr1 === "     " && turn === 0 && mode === 1) {
             $scope.sqr1 = player;
             sqr1T = 1;
             turn = 1;
-            vari();
+            setSquareVariables();
             check();
         } else if ($scope.sqr1 === "     " && turn === 1 && mode === 2) {
             $scope.sqr1 = player;
             sqr1T = 1;
             turn = 0;
-            vari();
+            setSquareVariables();
             player1Check();
         } else if ($scope.sqr1 === "     " && turn === 0 && mode === 2) {
             $scope.sqr1 = cpu;
             sqr1T = 1;
             turn = 1;
-            vari();
+            setSquareVariables();
             player1Check();
         }
         drawCheck();
@@ -144,19 +148,19 @@ app.controller('indexCtrl', function($scope, $timeout){
             $scope.sqr2 = player;
             sqr2T = 1;
             turn = 1;
-            vari();
+            setSquareVariables();
             check();
         } else if ($scope.sqr2 === "     " && turn === 1 && mode === 2) {
             $scope.sqr2 = player;
             sqr2T = 1;
             turn = 0;
-            vari();
+            setSquareVariables();
             player1Check();
         } else if ($scope.sqr2 === "     " && turn === 0 && mode === 2) {
             $scope.sqr2 = cpu;
             sqr2T = 1;
             turn = 1;
-            vari();
+            setSquareVariables();
             player1Check();
         }
         drawCheck();
@@ -167,19 +171,19 @@ app.controller('indexCtrl', function($scope, $timeout){
             $scope.sqr3 = player;
             sqr3T = 1;
             turn = 1;
-            vari();
+            setSquareVariables();
             check();
         } else if ($scope.sqr3 === "     " && turn === 1 && mode === 2) {
             $scope.sqr3 = player;
             sqr3T = 1;
             turn = 0;
-            vari();
+            setSquareVariables();
             player1Check();
         } else if ($scope.sqr3 === "     " && turn === 0 && mode === 2) {
             $scope.sqr3 = cpu;
             sqr3T = 1;
             turn = 1;
-            vari();
+            setSquareVariables();
             player1Check();
         }
         drawCheck();
@@ -190,19 +194,19 @@ app.controller('indexCtrl', function($scope, $timeout){
             $scope.sqr4 = player;
             sqr4T = 1;
             turn = 1;
-            vari();
+            setSquareVariables();
             check();
         } else if ($scope.sqr4 === "     " && turn === 1 && mode === 2) {
             $scope.sqr4 = player;
             sqr4T = 1;
             turn = 0;
-            vari();
+            setSquareVariables();
             player1Check();
         } else if ($scope.sqr4 === "     " && turn === 0 && mode === 2) {
             $scope.sqr4 = cpu;
             sqr4T = 1;
             turn = 1;
-            vari();
+            setSquareVariables();
             player1Check();
         }
         drawCheck();
@@ -213,19 +217,19 @@ app.controller('indexCtrl', function($scope, $timeout){
             $scope.sqr5 = player;
             sqr5T = 1;
             turn = 1;
-            vari();
+            setSquareVariables();
             check();
         } else if ($scope.sqr5 === "     " && turn === 1 && mode === 2) {
             $scope.sqr5 = player;
             sqr5T = 1;
             turn = 0;
-            vari();
+            setSquareVariables();
             player1Check();
         } else if ($scope.sqr5 === "     " && turn === 0 && mode === 2) {
             $scope.sqr5 = cpu;
             sqr5T = 1;
             turn = 1;
-            vari();
+            setSquareVariables();
             player1Check();
         }
         drawCheck();
@@ -236,19 +240,19 @@ app.controller('indexCtrl', function($scope, $timeout){
             $scope.sqr6 = player;
             sqr6T = 1;
             turn = 1;
-            vari();
+            setSquareVariables();
             check();
         } else if ($scope.sqr6 === "     " && turn === 1 && mode === 2) {
             $scope.sqr6 = player;
             sqr6T = 1;
             turn = 0;
-            vari();
+            setSquareVariables();
             player1Check();
         } else if ($scope.sqr6 === "     " && turn === 0 && mode === 2) {
             $scope.sqr6 = cpu;
             sqr6T = 1;
             turn = 1;
-            vari();
+            setSquareVariables();
             player1Check();
         }
         drawCheck();
@@ -259,19 +263,19 @@ app.controller('indexCtrl', function($scope, $timeout){
             $scope.sqr7 = player;
             sqr7T = 1;
             turn = 1;
-            vari();
+            setSquareVariables();
             check();
         } else if ($scope.sqr7 === "     " && turn === 1 && mode === 2) {
             $scope.sqr7 = player;
             sqr7T = 1;
             turn = 0;
-            vari();
+            setSquareVariables();
             player1Check();
         } else if ($scope.sqr7 === "     " && turn === 0 && mode === 2) {
             $scope.sqr7 = cpu;
             sqr7T = 1;
             turn = 1;
-            vari();
+            setSquareVariables();
             player1Check();
         }
         drawCheck();
@@ -282,19 +286,19 @@ app.controller('indexCtrl', function($scope, $timeout){
             $scope.sqr8 = player;
             sqr8T = 1;
             turn = 1;
-            vari();
+            setSquareVariables();
             check();
         } else if ($scope.sqr8 === "     " && turn === 1 && mode === 2) {
             $scope.sqr8 = player;
             sqr8T = 1;
             turn = 0;
-            vari();
+            setSquareVariables();
             player1Check();
         } else if ($scope.sqr8 === "     " && turn === 0 && mode === 2) {
             $scope.sqr8 = cpu;
             sqr8T = 1;
             turn = 1;
-            vari();
+            setSquareVariables();
             player1Check();
         }
         drawCheck();
@@ -305,25 +309,26 @@ app.controller('indexCtrl', function($scope, $timeout){
             $scope.sqr9 = player;
             sqr9T = 1;
             turn = 1;
-            vari();
+            setSquareVariables();
             check();
         } else if ($scope.sqr9 === "     " && turn === 1 && mode === 2) {
             $scope.sqr9 = player;
             sqr9T = 1;
             turn = 0;
-            vari();
+            setSquareVariables();
             player1Check();
         } else if ($scope.sqr9 === "     " && turn === 0 && mode === 2) {
             $scope.sqr9 = cpu;
             sqr9T = 1;
             turn = 1;
-            vari();
+            setSquareVariables();
             player1Check();
         }
         drawCheck();
     };
 
-    function vari(){
+    // Used to set square values to be used for the rest of the Player/Computer AI
+    function setSquareVariables(){
         sqr1 = $scope.sqr1;
         sqr2 = $scope.sqr2;
         sqr3 = $scope.sqr3;
@@ -334,7 +339,8 @@ app.controller('indexCtrl', function($scope, $timeout){
         sqr8 = $scope.sqr8;
         sqr9 = $scope.sqr9;
     }
-    
+
+    // Checks to see if Player won
     function check(){
         if(sqr1 === player && sqr2 === player && sqr3 === player){
             alert("You Win!");
@@ -370,8 +376,9 @@ app.controller('indexCtrl', function($scope, $timeout){
         }
     }
 
+    // Checks to see if CPU won
     function check2() {
-        vari();
+        setSquareVariables();
         drawCheck();
         if (sqr1 === cpu && sqr2 === cpu && sqr3 === cpu && gameOverLose === 0) {
             gameOverLose++;
@@ -412,75 +419,9 @@ app.controller('indexCtrl', function($scope, $timeout){
         }
     }
 
-    function player1Check() {
-        if (sqr1 === player && sqr2 === player && sqr3 === player) {
-            alert("Player 1 wins!");
-            reset();
-        } else if (sqr4 === player && sqr5 === player && sqr6 === player) {
-            alert("Player 1 wins!");
-            reset();
-        } else if (sqr7 === player && sqr8 === player && sqr9 === player) {
-            alert("Player 1 wins!");
-            reset();
-        } else if (sqr1 === player && sqr5 === player && sqr9 === player) {
-            alert("Player 1 wins!");
-            reset();
-        } else if (sqr1 === player && sqr4 === player && sqr7 === player) {
-            alert("Player 1 wins!");
-            reset();
-        } else if (sqr2 === player && sqr5 === player && sqr8 === player) {
-            alert("Player 1 wins!");
-            reset();
-        } else if (sqr3 === player && sqr6 === player && sqr9 === player) {
-            alert("Player 1 wins!");
-            reset();
-        } else if (sqr1 === player && sqr5 === player && sqr9 === player) {
-            alert("Player 1 wins!");
-            reset();
-        } else if (sqr3 === player && sqr5 === player && sqr7 === player) {
-            alert("Player 1 wins!");
-            reset();
-        } else {
-            player2Check();
-            drawCheck();
-        }
-    }
-
-    function player2Check() {
-        vari();
-        drawCheck();
-        if (sqr1 === cpu && sqr2 === cpu && sqr3 === cpu) {
-            alert("Player 2 wins!");
-            reset();
-        } else if (sqr4 === cpu && sqr5 === cpu && sqr6 === cpu) {
-            alert("Player 2 wins!");
-            reset();
-        } else if (sqr7 === cpu && sqr8 === cpu && sqr9 === cpu) {
-            alert("Player 2 wins!");
-            reset();
-        } else if (sqr1 === cpu && sqr5 === cpu && sqr9 === cpu) {
-            alert("Player 2 wins!");
-            reset();
-        } else if (sqr1 === cpu && sqr4 === cpu && sqr7 === cpu) {
-            alert("Player 2 wins!");
-            reset();
-        } else if (sqr2 === cpu && sqr5 === cpu && sqr8 === cpu) {
-            alert("Player 2 wins!");
-            reset();
-        } else if (sqr3 === cpu && sqr6 === cpu && sqr9 === cpu) {
-            alert("Player 2 wins!");
-            reset();
-        } else if (sqr1 === cpu && sqr5 === cpu && sqr9 === cpu) {
-            alert("Player 2 wins!");
-            reset();
-        } else if (sqr3 === cpu && sqr5 === cpu && sqr7 === cpu) {
-            alert("Player 2 wins!");
-            reset();
-        }
-    }
-
+    // Checks to see if the game is a draw
     function drawCheck() {
-        vari();
+        setSquareVariables();
         moveCount = sqr1T + sqr2T + sqr3T + sqr4T + sqr5T + sqr6T + sqr7T + sqr8T + sqr9T + gameOverDraw;
         if (moveCount === 9) {
             gameOverDraw++;
@@ -489,6 +430,7 @@ app.controller('indexCtrl', function($scope, $timeout){
         }
     }
 
+    // cpu checks to see if it can make a winning move. If not, runs the computer function to determine next move
     function winCheck() {
         check2();
         if (sqr1 === cpu && sqr2 === cpu && sqr3T === 0 && turn === 1) {
@@ -597,6 +539,7 @@ app.controller('indexCtrl', function($scope, $timeout){
         check2();
     }
 
+    // Determines where cpu should mark to win game
     function computer() {
         check2();
         if (sqr1 === player && sqr2 === player && sqr3T === 0 && turn === 1) {
@@ -705,8 +648,9 @@ app.controller('indexCtrl', function($scope, $timeout){
         check2();
     }
 
+    // AI used to determine which part of the board to mark if game cannot be won that turn
     function AI(){
-        vari();
+        setSquareVariables();
         if ($scope.sqr5 === "     " && turn === 1) {
             $scope.sqr5 = cpu;
             turn = 0;
@@ -743,11 +687,12 @@ app.controller('indexCtrl', function($scope, $timeout){
         check2();
     }
 
-
+    // Reset function after 1st game and beyond
     function reset() {
         $timeout(quickReset, 750);
     }
 
+    // Instant reset used when player chooses to be X and O
     function quickReset() {
         $scope.sqr1 = "     ";
         $scope.sqr2 = "     ";
@@ -779,8 +724,28 @@ app.controller('indexCtrl', function($scope, $timeout){
         gameOverLose = 0;
         gameOverDraw = 0;
         gameOverWin = 0;
-        vari();
+        setSquareVariables();
         turn = 0;
         moveCount = 0;
     }
+});
+
+// Serves templates to index.html using Angular. Keeps the index page cleaner.
+app.directive('headerView', function() {
+    return {
+        restrict: 'EA',
+        templateUrl: 'templates/header.html'
+    };
+});
+app.directive('bodyView', function() {
+    return {
+        restrict: 'EA',
+        templateUrl: 'templates/body.html'
+    };
+});
+app.directive('footerView', function() {
+    return {
+        restrict: 'EA',
+        templateUrl: 'templates/footer.html'
+    };
 });
