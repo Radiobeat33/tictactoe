@@ -1,0 +1,25 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "package file for TicTacToe game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Radiobeat33/tictactoe.git"
+  },
+  "author": "Steven Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Radiobeat33/tictactoe/issues"
+  },
+  "homepage": "https://github.com/Radiobeat33/tictactoe#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^2.0.0",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.1.0"
+  }
+}

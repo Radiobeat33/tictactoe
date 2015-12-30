@@ -15,6 +15,10 @@ body > #container {
     height: 75px;
 }
 
+.body-style {
+    background: #669999;
+}
+
 .footer-style {
     background: #003333;
     color: #669999;
@@ -43,42 +47,12 @@ img {
     height: 100px;
     width: 100px;
     margin: 5px;
-
 }
 
-
-.sqr1style {
-
-}
-
-.sqr2style {
-
-}
-
-.sqr3style {
-
-}
-
-.sqr4style {
-
-}
-
-.sqr5style {
-
-}
-
-.sqr6style {
-
-}
-
-.sqr7style {
-
-}
-
-.sqr8style {
-
-}
-
-.sqr9style {
-
+.button-style {
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 16px;
+    height: 50px;
+    border-radius: 10px;
+    color: #FF3333;
 }

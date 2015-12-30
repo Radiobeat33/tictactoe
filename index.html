@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body ng-controller="indexCtrl">
-    <div id="container">
+    <div id="container" class="body-style">
+
         <div id="header-container" class="container-fluid">
             <div id="header" class="row header-style">
                 <div class="col-xs-0 col-sm-4 col-md-4"></div>
@@ -17,28 +18,30 @@
             </div>
         </div>
 
-        <div id="XO-choice-section" class="row XO-section">
-            <div class="col-xs-1 col-sm-1 col-md-1"></div>
-            <button class="col-xs-4 col-sm-4 col-md-4 text-center" ng-click="startGame('O')">Start Game as O</button>
-            <div class="col-xs-2 col-sm-2 col-md-2"></div>
-            <button class="col-xs-4 col-sm-4 col-md-4 text-center" ng-click="startGame('X')">Start Game as X</button>
-            <div class="col-xs-1 col-sm-1 col-md-1"></div>
-        </div>
+        <div>
+            <div id="XO-choice-section" class="row XO-section">
+                <div class="col-xs-1 col-sm-1 col-md-1"></div>
+                <button class="col-xs-4 col-sm-4 col-md-4 text-center button-style" ng-click="startGame('O')">Start Game as O</button>
+                <div class="col-xs-2 col-sm-2 col-md-2"></div>
+                <button class="col-xs-4 col-sm-4 col-md-4 text-center button-style" ng-click="startGame('X')">Start Game as X</button>
+                <div class="col-xs-1 col-sm-1 col-md-1"></div>
+            </div>
 
-        <div id="board" class="row board" ng-show="midGame===true">
-            <div class="hidden-xs col-sm-2 col-md-3 text-center"></div>
-            <FORM class="col-xs-12 col-sm-8 col-md-6 text-center" NAME="tic" method="post">
-                <INPUT TYPE="button" NAME="sqr1" value="{{sqr1}}" class="btn active sqr1style" ng-model="sqr1" ng-click="sqr1Click()">
-                <INPUT TYPE="button" NAME="sqr2" value="{{sqr2}}" class="btn active sqr2style" ng-model="sqr2" ng-click="sqr2Click()">
-                <INPUT TYPE="button" NAME="sqr3" value="{{sqr3}}" class="btn active sqr3style" ng-model="sqr3" ng-click="sqr3Click()"><br />
-                <INPUT TYPE="button" NAME="sqr4" value="{{sqr4}}" class="btn active sqr4style" ng-model="sqr4" ng-click="sqr4Click()">
-                <INPUT TYPE="button" NAME="sqr5" value="{{sqr5}}" class="btn active sqr5style" ng-model="sqr5" ng-click="sqr5Click()">
-                <INPUT TYPE="button" NAME="sqr6" value="{{sqr6}}" class="btn active sqr6style" ng-model="sqr6" ng-click="sqr6Click()"><br />
-                <INPUT TYPE="button" NAME="sqr7" value="{{sqr7}}" class="btn active sqr7style" ng-model="sqr7" ng-click="sqr7Click()">
-                <INPUT TYPE="button" NAME="sqr8" value="{{sqr8}}" class="btn active sqr8style" ng-model="sqr8" ng-click="sqr8Click()">
-                <INPUT TYPE="button" NAME="sqr9" value="{{sqr9}}" class="btn active sqr9style" ng-model="sqr9" ng-click="sqr9Click()">
-            </form>
-            <div class="hidden-xs col-sm-2 col-md-3 text-center"></div>
+            <div id="board" class="row board" ng-show="midGame===true">
+                <div class="hidden-xs col-sm-2 col-md-3 text-center"></div>
+                <FORM class="col-xs-12 col-sm-8 col-md-6 text-center" NAME="tic" method="post">
+                    <INPUT TYPE="button" NAME="sqr1" value="{{sqr1}}" class="btn active sqr1style" ng-model="sqr1" ng-click="sqr1Click()">
+                    <INPUT TYPE="button" NAME="sqr2" value="{{sqr2}}" class="btn active sqr2style" ng-model="sqr2" ng-click="sqr2Click()">
+                    <INPUT TYPE="button" NAME="sqr3" value="{{sqr3}}" class="btn active sqr3style" ng-model="sqr3" ng-click="sqr3Click()"><br />
+                    <INPUT TYPE="button" NAME="sqr4" value="{{sqr4}}" class="btn active sqr4style" ng-model="sqr4" ng-click="sqr4Click()">
+                    <INPUT TYPE="button" NAME="sqr5" value="{{sqr5}}" class="btn active sqr5style" ng-model="sqr5" ng-click="sqr5Click()">
+                    <INPUT TYPE="button" NAME="sqr6" value="{{sqr6}}" class="btn active sqr6style" ng-model="sqr6" ng-click="sqr6Click()"><br />
+                    <INPUT TYPE="button" NAME="sqr7" value="{{sqr7}}" class="btn active sqr7style" ng-model="sqr7" ng-click="sqr7Click()">
+                    <INPUT TYPE="button" NAME="sqr8" value="{{sqr8}}" class="btn active sqr8style" ng-model="sqr8" ng-click="sqr8Click()">
+                    <INPUT TYPE="button" NAME="sqr9" value="{{sqr9}}" class="btn active sqr9style" ng-model="sqr9" ng-click="sqr9Click()">
+                </form>
+                <div class="hidden-xs col-sm-2 col-md-3 text-center"></div>
+            </div>
         </div>
 
     </div>
@@ -47,7 +50,7 @@
         <div id="footer" class="row footer-style">
             <div id='createdByMobile' class="visible-xs-12 hidden-sm hidden-md hidden-lg text-center" style="vertical-align: middle;line-height: 50px;font-size: 14px;">Created By: <a href="http://github.com/Radiobeat33"><img src="assets/steven.png" alt="Steven Logo"></a></div>
             <div id='createdBy' class="hidden-xs col-sm-6 col-md-6 text-left" style="vertical-align: middle;line-height: 50px;font-size: 14px;">Created By: <a href="http://github.com/Radiobeat33"><img src="assets/steven.png" alt="Steven Logo"></a></div>
-            <mg  id='poweredBy' class="hidden-xs col-sm-6 col-md-6 text-right" style="vertical-align: middle;line-height: 50px;font-size: 14px;">Powered By: <a href="http://angularjs.org"><img src="assets/angular.png" alt="Angular Logo"></a><a href="http://sass-lang.com"><img src="assets/sass.png" alt="Sass Logo"></a><a href="http://gulpjs.com"><img src="assets/gulp.png" alt="Gulp Logo"></a><a href="http://getbootstrap.com"><img src="assets/bootstrap.png" alt="Twitter Bootstrap Logo"></a></div>
+            <mg  id='poweredBy' class="hidden-xs col-sm-6 col-md-6 text-right" style="vertical-align: middle;line-height: 50px;font-size: 14px;">Powered By: <a href="http://angularjs.org"><img src="assets/angular.png" alt="Angular Logo"></a><a href="http://gulpjs.com"><img src="assets/gulp.png" alt="Gulp Logo"></a><a href="http://getbootstrap.com"><img src="assets/bootstrap.png" alt="Twitter Bootstrap Logo"></a></div>
         </div>
     </div>
 
