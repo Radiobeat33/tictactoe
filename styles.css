@@ -1,33 +1,11 @@
 html, body, #container {
     height: 100%;
+    font-family: 'Fascinate Inline', cursive;
 }
 
 body > #container {
     height: auto;
     min-height: 100%;
-}
-
-.header-style {
-    background: #003333;
-    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.75);
-    color: #669999;
-    font-family: 'Fascinate Inline', cursive;
-    height: 75px;
-}
-
-.body-style {
-    background: #669999;
-}
-
-.footer-style {
-    background: #003333;
-    color: #669999;
-    clear: both;
-    font-family: 'Fascinate Inline', cursive;
-    height: 50px;
-    margin-top: -50px;
-    position: relative;
-    z-index: 10;
 }
 
 img {
@@ -37,22 +15,44 @@ img {
     text-align: center;
 }
 
+.header-style {
+    background: #003333;
+    -webkit-box-shadow: 0 5px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 5px 10px 1px rgba(0,0,0,0.75);
+    -o-box-shadow: 0 5px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.75);
+    color: #669999;
+    height: 75px;
+}
+
+.body-style {
+    background: #669999;
+}
+
+.button-style {
+    border-radius: 10px;
+    color: #FF3333;
+    font-size: 16px;
+    height: 50px;
+}
+
 .XO-section, .board {
     padding: 30px 0;
 }
 
 .sqr1style, .sqr2style, .sqr3style, .sqr4style, .sqr5style, .sqr6style, .sqr7style, .sqr8style, .sqr9style {
-    font-family: 'Fascinate Inline', cursive;
     font-size: 60px;
     height: 100px;
-    width: 100px;
     margin: 5px;
+    width: 100px;
 }
 
-.button-style {
-    font-family: 'Fascinate Inline', cursive;
-    font-size: 16px;
+.footer-style {
+    background: #003333;
+    color: #669999;
+    clear: both;
     height: 50px;
-    border-radius: 10px;
-    color: #FF3333;
+    margin-top: -50px;
+    position: relative;
+    z-index: 10;
 }
